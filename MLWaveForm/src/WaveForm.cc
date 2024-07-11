@@ -114,7 +114,8 @@ int WaveForm::process_event(PHCompositeNode *topNode)
       for (int j = 0; j < 12; j++)
       {
 	std::cout << "waveform_value[" << j << "]: " << rawtwr->get_waveform_value(j) << std::endl;
-      }
+	outfile << rawtwr->get_waveform_value(j) <<std::endl;
+      } 
     }
   }
   return Fun4AllReturnCodes::EVENT_OK;
